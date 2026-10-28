@@ -12,6 +12,11 @@
       "activity": "确认重规划业务优先级",
       "decision": "preserve_script",
       "evidence": "候选人在本次对话中明确选择：优先保留创意脚本，先简化制作。该决定落实为 replan_priority 输入及对照测试。"
+    },
+    {
+      "activity": "以本人账号创建公开 GitHub 仓库",
+      "repository": "https://github.com/XissTain/content-planner-agent",
+      "evidence": "候选人创建 XissTain/content-planner-agent 后在对话中提供链接，上传前已通过公开接口确认仓库存在且为公开空仓库。"
     }
   ],
   "candidate_business_review": null,

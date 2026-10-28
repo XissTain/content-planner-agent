@@ -21,7 +21,7 @@
 | 统一仓库规范 | README、src、tests、examples、data、五份文档、依赖说明、env 示例 | [README](../README.md) |
 | AI 范围与个人贡献 | 标明 AI 实现与测试，候选人的实际业务决策可追溯 | [AI 使用](04-ai-usage.md)、[结构化贡献](contributions.json) |
 | 实际用时、未完成与限制 | 分阶段记录辅助会话窗口，不虚构个人投入；明确范围 | [AI 使用](04-ai-usage.md)、[评估限制](03-evaluation.md) |
-| GitHub URL、最终 SHA、评审可读 | 本地可准备，远程仓库未建立时不能声称正式提交完成 | `python3 scripts/check_submission.py --published` |
+| GitHub URL、最终 SHA、评审可读 | 公开仓库已创建，最终远程版本由检查命令核对 | `python3 scripts/check_submission.py --published` |
 
 ## 已针对性加强的得分机会
 
@@ -53,8 +53,8 @@
 
 题面不要求 UI、线上部署、多 Agent 或生产 Runtime，因此没有把时间用于这些部分。合成业务工具是被允许的，不伪装为已经对接真实发布或付费平台。离线 CI 是便于复跑的工程补充，未执行前不宣称线上 CI 已通过。
 
-## 正式提交剩余项
+## 正式提交信息
 
-候选人已确认尚未建立 GitHub 仓库。正式提交仍需仓库 URL、最终远程 commit SHA，并在私有仓库情况下给评审可读权限。ZIP 不能替代这些字段。
+候选人已创建公开仓库 [XissTain/content-planner-agent](https://github.com/XissTain/content-planner-agent)。正式提交填写题号 2、该 URL 和上传后核对的最终远程 commit SHA。公开仓库便于评审读取；ZIP 不能替代这些字段。
 
 个人参与已如实记录为需求和业务优先级决策；亲自复跑、个人代码修改与个人用时尚未报告。建议理解 [复查与答辩](07-review-and-defense.md) 后再补充实际记录，不能预填已经完成。

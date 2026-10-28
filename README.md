@@ -1,5 +1,7 @@
 # 内容任务规划 Agent · 小影校招第 2 题
 
+项目仓库：[XissTain/content-planner-agent](https://github.com/XissTain/content-planner-agent)。
+
 在预算和截止时间内形成一份内容活动方案。GPT 根据实际测算和工具错误选择下一步动作；Python 校验硬约束并保存结果。业务工具使用合成数据，模型通过已登录的 Codex CLI 调用，无需另配 API Key。
 
 **本次业务取舍由候选人确认：预算不足时，优先保留创意脚本，先简化制作。** 相反偏好的对照用例用于验证模型是否根据需求改变方案，不将“更便宜”直接当作“更合适”。
@@ -101,6 +103,6 @@ python3 scripts/package_submission.py
 
 [需求](docs/01-requirements.md) · [设计](docs/02-solution.md) · [评估](docs/03-evaluation.md) · [AI 使用](docs/04-ai-usage.md) · [复盘](docs/05-retrospective.md)
 
-使用 Python 原生循环与 SQLite，没有 Agent 框架。已配置 Python 3.9/3.13 的离线 CI，GitHub 尚未建立前不能声称 CI 已在线通过。运行时环境、实际命令和 CLI 版本见评估文档。
+使用 Python 原生循环与 SQLite，没有 Agent 框架。已配置 Python 3.9/3.13 的离线 CI，线上结果以 [GitHub Actions](https://github.com/XissTain/content-planner-agent/actions) 的实际记录为准。运行时环境、实际命令和 CLI 版本见评估文档。
 
 接入依据：[Codex 官方非交互模式说明](https://learn.chatgpt.com/docs/non-interactive-mode)。CI 配置参照 [checkout](https://github.com/actions/checkout) 和 [setup-python](https://github.com/actions/setup-python) 官方用法。
