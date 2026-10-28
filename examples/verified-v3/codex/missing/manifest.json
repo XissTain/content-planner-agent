@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "run_id": "7d28fc8ee4e54f5985a9109ab20c61df",
+  "started_at": "2026-10-28T09:13:42.849262+00:00",
+  "python": "3.9.6",
+  "process_id": 11155,
+  "mode": "codex",
+  "max_steps": 12,
+  "fault_injection": {},
+  "catalog_sha256": "ea18f74e04c77e87b193079b0ce97f67faf3bb6f6d73f754bd5c9e24be262585",
+  "source_sha256": "fc5b009fa91da49787732ea957f2eec98639df910bb63a0959cc64b5835110d9",
+  "source_files": {
+    "run.py": "a0e574641a5756d8ceffcd439023aa3a094fec1e7e8325a8fc76e9e88894e6ff",
+    "src/content_planner/__init__.py": "3c380dbb1682aacf4cf0cd34fd5a1cf17f7e7c194bc5cb0444584bda901d2e10",
+    "src/content_planner/agent.py": "76b2ae75b648d50b0c0d1a97058f0db25bbd761a24e4cc0808134004df475639",
+    "src/content_planner/audit.py": "d27e0d106c9001a6177e0d3163a1e18fa420631c0eaab5eecd413cb3cb77e845",
+    "src/content_planner/cli.py": "71a841aaef019399905db0c0512f328e07dc833b3c2af34ab00df5edaf3360a9",
+    "src/content_planner/evidence.py": "bb034d1e48d808028ac4dda98c509e867d56ac7f3dca177d4b840847788de518",
+    "src/content_planner/models.py": "40c99bf391741f5bcfaec50d7eb3405fa3e7ee76424a6915de49963f61760c07",
+    "src/content_planner/reporting.py": "ad3dccabce1668eefbece145c8b65475be7914398a3791f2788b07c5295a9e41",
+    "src/content_planner/store.py": "30665a81c18f80265780cf2b885e182b862f0fe877a4764512088cb4fa3370c7",
+    "src/content_planner/tools.py": "bb97ecda246144202e9f3d443444d9e3789332a49b66b627a938733fdff4a36f",
+    "src/content_planner/validation.py": "2f65b9e33dee14af7efd48dcf6f2ed24df7df5ded5012b286a024d5f457de2a3"
+  },
+  "request_sha256": "51eae42b485f61054b7dc54243f236705df4939f4d189629b20470459aedc522",
+  "files": {
+    "input.json": "66152a6a1750ef2c9650e8464e49c2a5986fc9e7fda45c90434ca0fe961c59b9",
+    "catalog.json": "ddce53779ffb64e70fcf4ec5568f0f7c8cc757b445deb11db15e923508f4e6c0",
+    "output.json": "976bb50e6b82e32bda950bac86000daed50fc90fc65862bca7285a2ea7a52dec",
+    "trace.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision-inputs.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace.md": "77e3b97a064e6d8fcc9b9195c9c0e172b39ad961f8bbe11350819e7ce8b107c5",
+    "result.md": "239102596c9ec9aceb5884769cabce8f5dd029ce6b1f89fbc17168c580090a12"
+  }
+}

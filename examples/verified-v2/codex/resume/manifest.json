@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "run_id": "6ffb7a9312c04b6cb01a7b6e077f5400",
+  "started_at": "2026-10-28T08:55:48.437747+00:00",
+  "python": "3.9.6",
+  "process_id": 10760,
+  "mode": "codex",
+  "max_steps": 4,
+  "fault_injection": {
+    "save_plan": {
+      "count": 1,
+      "retryable": true
+    }
+  },
+  "catalog_sha256": "ea18f74e04c77e87b193079b0ce97f67faf3bb6f6d73f754bd5c9e24be262585",
+  "source_sha256": "4e7325c541bd3f4dcc70058e1fb40c58bb8b1bc22515d96df6bb544daf6de498",
+  "source_files": {
+    "run.py": "a0e574641a5756d8ceffcd439023aa3a094fec1e7e8325a8fc76e9e88894e6ff",
+    "src/content_planner/__init__.py": "3c380dbb1682aacf4cf0cd34fd5a1cf17f7e7c194bc5cb0444584bda901d2e10",
+    "src/content_planner/agent.py": "76b2ae75b648d50b0c0d1a97058f0db25bbd761a24e4cc0808134004df475639",
+    "src/content_planner/audit.py": "d27e0d106c9001a6177e0d3163a1e18fa420631c0eaab5eecd413cb3cb77e845",
+    "src/content_planner/cli.py": "71a841aaef019399905db0c0512f328e07dc833b3c2af34ab00df5edaf3360a9",
+    "src/content_planner/evidence.py": "bb034d1e48d808028ac4dda98c509e867d56ac7f3dca177d4b840847788de518",
+    "src/content_planner/models.py": "9b2583880247c0ac034cc39a37af418df37acd32e42ac74ac7cf77a784c0a3db",
+    "src/content_planner/reporting.py": "ad3dccabce1668eefbece145c8b65475be7914398a3791f2788b07c5295a9e41",
+    "src/content_planner/store.py": "30665a81c18f80265780cf2b885e182b862f0fe877a4764512088cb4fa3370c7",
+    "src/content_planner/tools.py": "bb97ecda246144202e9f3d443444d9e3789332a49b66b627a938733fdff4a36f",
+    "src/content_planner/validation.py": "2f65b9e33dee14af7efd48dcf6f2ed24df7df5ded5012b286a024d5f457de2a3"
+  },
+  "finished_at": "2026-10-28T08:57:22.890363+00:00",
+  "request_sha256": "31843337ac7a075b4bdab1d29e97ed8ddafb46b2cccf0fa5d25d0f403f61a8a2",
+  "files": {
+    "input.json": "b85fbeb84ed04e487f8d186468bbb3e852c3d50227090b76a9ac3b4c50015e8f",
+    "catalog.json": "ddce53779ffb64e70fcf4ec5568f0f7c8cc757b445deb11db15e923508f4e6c0",
+    "output.json": "2ef74dd675129696eb5b7b8cd0f19e1718edffa5e2a845eaccb178efc4b0646b",
+    "trace.jsonl": "0ddaae9450025cb95b292f543cf42b9656f106e0574737bb409af2ff631e56a8",
+    "decision-inputs.jsonl": "9ae64d3cdfd20c8ff54253484067331c0336d92e06ba9c83c85c4180f25eacae",
+    "trace.md": "e38c6456d34a787b95fe579c34943cbddafadb00a01ca0979857d46fc8a8800c",
+    "result.md": "2491349aa7e97cfc2e595111846e6cbcdfd63b32f28b7621165291716938c8eb"
+  }
+}

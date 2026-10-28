@@ -1,0 +1,15 @@
+{
+  "status": "needs_input",
+  "message": "请提供 deadline；请提供非负、有限的数字 budget；0 是有效预算。",
+  "mode": "codex",
+  "real_model_used": false,
+  "evidence_modes": [],
+  "steps_this_run": 0,
+  "steps": [],
+  "plan": null,
+  "preserved_results": {},
+  "request": {
+    "request_id": "eval-missing",
+    "topic": "剪辑助手新品内容活动"
+  }
+}

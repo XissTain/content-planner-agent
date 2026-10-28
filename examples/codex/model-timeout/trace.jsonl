@@ -1,0 +1,1 @@
+{"step": 1, "event": "model_error", "message": "Codex 模型调用超时；checkpoint 已保留，可重新执行续跑。", "mode": "codex"}

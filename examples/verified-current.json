@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-10-28T09:42:58.975488+00:00",
+  "question": 2,
+  "technical_ready": true,
+  "issues": [],
+  "source_sha256": "fc5b009fa91da49787732ea957f2eec98639df910bb63a0959cc64b5835110d9",
+  "unit_tests_passed": 43,
+  "scope": "技术证据汇总；GitHub URL、最终远程 SHA 与权限须另行检查。",
+  "modes": {
+    "mock": {
+      "passed": 15,
+      "total": 15,
+      "model_actions": 0,
+      "cases": {
+        "normal": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/normal",
+            "examples/verified-v3/mock/repeat"
+          ],
+          "model_actions": 0
+        },
+        "replan": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/replan"
+          ],
+          "model_actions": 0
+        },
+        "user-priority": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/user-priority"
+          ],
+          "model_actions": 0
+        },
+        "opposite-priority": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/opposite-priority"
+          ],
+          "model_actions": 0
+        },
+        "missing": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/missing"
+          ],
+          "model_actions": 0
+        },
+        "missing-budget": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/missing-budget"
+          ],
+          "model_actions": 0
+        },
+        "missing-deadline": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/missing-deadline"
+          ],
+          "model_actions": 0
+        },
+        "tool-failure": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/tool-failure"
+          ],
+          "model_actions": 0
+        },
+        "service-fallback": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/service-fallback"
+          ],
+          "model_actions": 0
+        },
+        "save-failure": {
+          "passed": true,
+          "expected": "incomplete",
+          "actual": "incomplete",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/save-failure"
+          ],
+          "model_actions": 0
+        },
+        "impossible": {
+          "passed": true,
+          "expected": "incomplete",
+          "actual": "incomplete",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/impossible"
+          ],
+          "model_actions": 0
+        },
+        "deadline": {
+          "passed": true,
+          "expected": "incomplete",
+          "actual": "incomplete",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/deadline"
+          ],
+          "model_actions": 0
+        },
+        "deadline-replan": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/deadline-replan"
+          ],
+          "model_actions": 0
+        },
+        "no-assets": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/no-assets"
+          ],
+          "model_actions": 0
+        },
+        "resume": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/mock/evaluation.json",
+          "directories": [
+            "examples/verified-v3/mock/resume",
+            "examples/verified-v3/mock/resume-continued"
+          ],
+          "model_actions": 0
+        }
+      }
+    },
+    "codex": {
+      "passed": 15,
+      "total": 15,
+      "model_actions": 57,
+      "cases": {
+        "normal": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/normal",
+            "examples/verified-v3/codex/repeat"
+          ],
+          "model_actions": 4
+        },
+        "replan": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/replan"
+          ],
+          "model_actions": 5
+        },
+        "user-priority": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/user-priority"
+          ],
+          "model_actions": 5
+        },
+        "opposite-priority": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/opposite-priority"
+          ],
+          "model_actions": 5
+        },
+        "missing": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/missing"
+          ],
+          "model_actions": 0
+        },
+        "missing-budget": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/missing-budget"
+          ],
+          "model_actions": 0
+        },
+        "missing-deadline": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/missing-deadline"
+          ],
+          "model_actions": 0
+        },
+        "tool-failure": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3-retry/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3-retry/codex/tool-failure"
+          ],
+          "model_actions": 5
+        },
+        "service-fallback": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/service-fallback"
+          ],
+          "model_actions": 6
+        },
+        "save-failure": {
+          "passed": true,
+          "expected": "incomplete",
+          "actual": "incomplete",
+          "report": "examples/verified-v3-retry-rest/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3-retry-rest/codex/save-failure"
+          ],
+          "model_actions": 6
+        },
+        "impossible": {
+          "passed": true,
+          "expected": "incomplete",
+          "actual": "incomplete",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/impossible"
+          ],
+          "model_actions": 3
+        },
+        "deadline": {
+          "passed": true,
+          "expected": "incomplete",
+          "actual": "incomplete",
+          "report": "examples/verified-v3-retry-rest/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3-retry-rest/codex/deadline"
+          ],
+          "model_actions": 4
+        },
+        "deadline-replan": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3-retry-rest/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3-retry-rest/codex/deadline-replan"
+          ],
+          "model_actions": 6
+        },
+        "no-assets": {
+          "passed": true,
+          "expected": "needs_input",
+          "actual": "needs_input",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/no-assets"
+          ],
+          "model_actions": 3
+        },
+        "resume": {
+          "passed": true,
+          "expected": "completed",
+          "actual": "completed",
+          "report": "examples/verified-v3/codex/evaluation.json",
+          "directories": [
+            "examples/verified-v3/codex/resume",
+            "examples/verified-v3/codex/resume-continued"
+          ],
+          "model_actions": 5
+        }
+      }
+    }
+  },
+  "first_full_model_run": {
+    "passed": 11,
+    "total": 15,
+    "model_actions": 47,
+    "failed_cases": [
+      "tool-failure",
+      "save-failure",
+      "deadline",
+      "deadline-replan"
+    ]
+  },
+  "rerun_note": "首轮四项模型响应超时的原始记录保留；对应场景以180秒响应上限、每批1个用例并发重新验证。最近各项通过不等于单次首轮全通过或总体成功率100%。"
+}

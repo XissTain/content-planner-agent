@@ -1,0 +1,51 @@
+{
+  "status": "needs_input",
+  "message": "没有相关素材，请补充素材或更改主题。",
+  "mode": "mock",
+  "real_model_used": false,
+  "evidence_modes": [
+    "mock"
+  ],
+  "request": {
+    "request_id": "eval-no-assets",
+    "topic": "深海潜艇科普",
+    "budget": 20,
+    "start_at": "2030-01-01T10:00:00+08:00",
+    "deadline": "2030-01-01T18:00:00+08:00"
+  },
+  "planning_clock": "2030-01-01T10:00:00+08:00",
+  "resumed": false,
+  "steps_this_run": 2,
+  "steps": [
+    {
+      "tool": "search_assets",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    },
+    {
+      "tool": "estimate_plan",
+      "status": "pending",
+      "attempts": 0,
+      "successes": 0
+    },
+    {
+      "tool": "generate_script",
+      "status": "pending",
+      "attempts": 0,
+      "successes": 0
+    },
+    {
+      "tool": "save_plan",
+      "status": "pending",
+      "attempts": 0,
+      "successes": 0
+    }
+  ],
+  "plan": null,
+  "preserved_results": {
+    "asset_ids": [],
+    "estimates": [],
+    "script_ids": []
+  }
+}

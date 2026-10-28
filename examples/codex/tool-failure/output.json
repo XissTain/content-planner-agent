@@ -1,0 +1,186 @@
+{
+  "status": "completed",
+  "message": "方案已实际保存；活动制作仍为计划。",
+  "mode": "codex",
+  "real_model_used": true,
+  "evidence_modes": [
+    "codex"
+  ],
+  "request": {
+    "request_id": "eval-tool-failure",
+    "topic": "剪辑助手新品内容活动",
+    "budget": 20,
+    "start_at": "2030-01-01T10:00:00+08:00",
+    "deadline": "2030-01-01T18:00:00+08:00",
+    "required_asset_ids": [
+      "A01"
+    ],
+    "preferred_script_service": "premium",
+    "preferred_production": "polished"
+  },
+  "planning_clock": "2030-01-01T10:00:00+08:00",
+  "resumed": false,
+  "steps_this_run": 5,
+  "steps": [
+    {
+      "tool": "search_assets",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    },
+    {
+      "tool": "estimate_plan",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    },
+    {
+      "tool": "generate_script",
+      "status": "succeeded",
+      "attempts": 2,
+      "successes": 1
+    },
+    {
+      "tool": "save_plan",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    }
+  ],
+  "plan": {
+    "activity_executed": false,
+    "budget": 20,
+    "deadline": "2030-01-01T18:00:00+08:00",
+    "estimate": {
+      "asset_ids": [
+        "A01"
+      ],
+      "budget_gap": 0,
+      "candidate_id": "5d39dbb2751083caa152",
+      "catalog_version": "synthetic-v1",
+      "finish_at": "2030-01-01T11:20:00+08:00",
+      "fits_budget": true,
+      "fits_deadline": true,
+      "line_items": [
+        {
+          "cost": 2,
+          "minutes": 5,
+          "name": "A01"
+        },
+        {
+          "cost": 6,
+          "description": "创意脚本服务",
+          "minutes": 30,
+          "name": "script:premium"
+        },
+        {
+          "cost": 4,
+          "description": "精细制作",
+          "minutes": 45,
+          "name": "production:polished"
+        }
+      ],
+      "minutes_gap": 0,
+      "ok": true,
+      "production": "polished",
+      "script_service": "premium",
+      "total_cost": 12,
+      "total_minutes": 80
+    },
+    "execution_plan": [
+      {
+        "depends_on": [],
+        "minutes": 5,
+        "step": "准备素材"
+      },
+      {
+        "depends_on": [
+          "准备素材"
+        ],
+        "minutes": 30,
+        "step": "生成脚本"
+      },
+      {
+        "depends_on": [
+          "生成脚本"
+        ],
+        "minutes": 45,
+        "step": "内容制作（仅规划，尚未实际制作）"
+      }
+    ],
+    "plan_id": "P-52fb9150cbeeddcc683c",
+    "request_id": "eval-tool-failure",
+    "save_status": "saved",
+    "script": {
+      "generator": "local-synthetic-template",
+      "script_id": "S-0e1085bb8ca0201f7cdc",
+      "service": "premium",
+      "shots": [
+        {
+          "order": 1,
+          "source_id": "A01",
+          "visual": "展示素材 A01",
+          "voiceover": "支持自动字幕"
+        },
+        {
+          "order": 2,
+          "source_id": "A01",
+          "visual": "展示素材 A01",
+          "voiceover": "提供可编辑的视频模板"
+        }
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "title": "剪辑助手新品内容活动"
+    },
+    "topic": "剪辑助手新品内容活动"
+  },
+  "preserved_results": {
+    "asset_ids": [
+      "A01",
+      "A02"
+    ],
+    "estimates": [
+      {
+        "ok": true,
+        "candidate_id": "5d39dbb2751083caa152",
+        "asset_ids": [
+          "A01"
+        ],
+        "script_service": "premium",
+        "production": "polished",
+        "line_items": [
+          {
+            "name": "A01",
+            "cost": 2,
+            "minutes": 5
+          },
+          {
+            "name": "script:premium",
+            "cost": 6,
+            "minutes": 30,
+            "description": "创意脚本服务"
+          },
+          {
+            "name": "production:polished",
+            "cost": 4,
+            "minutes": 45,
+            "description": "精细制作"
+          }
+        ],
+        "total_cost": 12,
+        "total_minutes": 80,
+        "finish_at": "2030-01-01T11:20:00+08:00",
+        "fits_budget": true,
+        "fits_deadline": true,
+        "budget_gap": 0,
+        "minutes_gap": 0,
+        "catalog_version": "synthetic-v1"
+      }
+    ],
+    "script_ids": [
+      "S-0e1085bb8ca0201f7cdc"
+    ]
+  }
+}

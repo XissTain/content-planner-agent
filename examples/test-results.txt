@@ -1,0 +1,48 @@
+test_changed_catalog_does_not_reuse_stale_plan (test_agent.AgentTests) ... ok
+test_deadline_infeasible_cannot_save (test_agent.AgentTests) ... ok
+test_extra_tool_arguments_rejected (test_agent.AgentTests) ... ok
+test_insufficient_budget_reports_gap (test_agent.AgentTests) ... ok
+test_invalid_budgets (test_agent.AgentTests) ... ok
+test_invalid_or_naive_deadline (test_agent.AgentTests) ... ok
+test_invalid_save_cannot_bypass_dependencies (test_agent.AgentTests) ... ok
+test_later_failure_is_not_masked_by_earlier_success (test_agent.AgentTests) ... ok
+test_missing_budget_and_deadline_no_tools_run (test_agent.AgentTests) ... ok
+test_mock_trace_never_claims_real_model (test_agent.AgentTests) ... ok
+test_model_cannot_claim_completed_using_finish (test_agent.AgentTests) ... ok
+test_model_error_preserves_checkpoint (test_agent.AgentTests) ... ok
+test_no_assets_requests_input (test_agent.AgentTests) ... ok
+test_normal_save_is_real_and_budget_sum_is_correct (test_agent.AgentTests) ... ok
+test_over_budget_candidate_cannot_generate_or_save (test_agent.AgentTests) ... ok
+test_over_budget_replans_after_observation (test_agent.AgentTests) ... ok
+test_repeat_has_one_plan_and_no_new_model_or_tool_calls (test_agent.AgentTests) ... ok
+test_required_assets_cannot_be_silently_removed (test_agent.AgentTests) ... ok
+test_same_id_with_different_request_rejected (test_agent.AgentTests) ... ok
+test_save_crash_before_checkpoint_recovers_from_database (test_agent.AgentTests) ... ok
+test_save_failure_does_not_claim_completion (test_agent.AgentTests) ... ok
+test_step_limit_is_incomplete_and_resume_skips_successes (test_agent.AgentTests) ... ok
+test_tool_failure_keeps_successful_steps (test_agent.AgentTests) ... ok
+test_unknown_tool_rejected (test_agent.AgentTests) ... ok
+test_zero_budget_is_not_treated_as_missing (test_agent.AgentTests) ... ok
+test_app_context_removed_and_structured_action_parsed (test_codex_adapter.CodexAdapterTests) ... ok
+test_cli_side_tool_execution_is_rejected (test_codex_adapter.CodexAdapterTests) ... ok
+test_explicit_model_and_auth_location_kept_without_printing_credentials (test_codex_adapter.CodexAdapterTests) ... ok
+test_invalid_timeout_fails_before_launch (test_codex_adapter.CodexAdapterTests) ... ok
+test_actual_sqlite_insert_failure_is_not_claimed_success (test_review.ReviewTests) ... ok
+test_deadline_replans_to_faster_services (test_review.ReviewTests) ... ok
+test_export_integrity_and_observation_to_action_chain (test_review.ReviewTests) ... ok
+test_invalid_catalog_negative_cost_rejected_before_execution (test_review.ReviewTests) ... ok
+test_large_integer_budget_does_not_overflow_validation (test_review.ReviewTests) ... ok
+test_missing_inputs_do_not_require_installed_codex (test_review.ReviewTests) ... ok
+test_opposite_priority_changes_actual_plan (test_review.ReviewTests) ... ok
+test_permanent_service_failure_uses_alternative_and_keeps_assets (test_review.ReviewTests) ... ok
+test_resume_from_distinct_cli_processes_only_saves (test_review.ReviewTests) ... ok
+test_transient_retries_reset_per_invocation_not_forever_blocked (test_review.ReviewTests) ... ok
+test_user_script_priority_preserved_when_feasible (test_review.ReviewTests) ... ok
+test_utc_z_timestamp_supported_on_python39 (test_review.ReviewTests) ... ok
+test_wall_clock_checked_again_after_model_wait_before_save (test_review.ReviewTests) ... ok
+test_wall_clock_resume_rejects_expired_deadline_and_keeps_script (test_review.ReviewTests) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 1.163s
+
+OK

@@ -1,0 +1,35 @@
+{
+  "candidate_completed": [
+    {
+      "activity": "提供试卷与选题约束",
+      "evidence": "候选人提供本地试卷与说明，并要求四选一综合评价。"
+    },
+    {
+      "activity": "确定模型接入方向",
+      "evidence": "候选人提出直接使用已登录的 Codex 连接 GPT 测试。"
+    },
+    {
+      "activity": "确认重规划业务优先级",
+      "decision": "preserve_script",
+      "evidence": "候选人在本次对话中明确选择：优先保留创意脚本，先简化制作。该决定落实为 replan_priority 输入及对照测试。"
+    }
+  ],
+  "candidate_business_review": null,
+  "candidate_self_run": null,
+  "candidate_code_edits": [],
+  "candidate_time_minutes": null,
+  "ai_work": "需求分析辅助、代码、合成数据、测试、模型验证、文档与工程优化均由 Codex 辅助完成。",
+  "note": "空字段表示尚未报告或完成，不能据此声称候选人已独立编写或亲自运行。",
+  "candidate_directed_changes": [
+    {
+      "change": "将预算重规划加入脚本质量优先级",
+      "decision_by": "candidate",
+      "implemented_by": "Codex",
+      "input": "examples/inputs/user-priority.json",
+      "field": "replan_priority=preserve_script",
+      "verification": "examples/verified-v3/codex/user-priority/trace.md",
+      "boundary": "这是候选人主导的业务规则修改；不是候选人亲自编写代码或亲自执行测试。"
+    }
+  ],
+  "business_calculation_by": "Codex，应候选人要求代为计算；未登记为候选人独立验算。"
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "mode": "codex",
+  "generated_at": "2026-10-28T09:26:05.784531+00:00",
+  "cases": [
+    {
+      "case": "tool-failure",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "failure_really_observed": true,
+        "successful_search_reused": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "tool-failure"
+      ],
+      "evidence_errors": {
+        "tool-failure": []
+      },
+      "model_actions": 5
+    }
+  ],
+  "all_passed": true,
+  "model_actions": 5,
+  "scope": "真实模型小样本行为验证；缺信息和重复请求不调用模型"
+}

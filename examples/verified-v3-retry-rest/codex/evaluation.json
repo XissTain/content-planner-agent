@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "mode": "codex",
+  "generated_at": "2026-10-28T09:36:59.553461+00:00",
+  "cases": [
+    {
+      "case": "save-failure",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "failure_really_observed": true,
+        "successful_search_reused": true,
+        "successful_script_not_regenerated": true,
+        "not_falsely_saved": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "save-failure"
+      ],
+      "evidence_errors": {
+        "save-failure": []
+      },
+      "model_actions": 6
+    },
+    {
+      "case": "deadline",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "stopped_on_business_constraints": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "deadline"
+      ],
+      "evidence_errors": {
+        "deadline": []
+      },
+      "model_actions": 4
+    },
+    {
+      "case": "deadline-replan",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "deadline_observation_changed_plan": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "deadline-replan"
+      ],
+      "evidence_errors": {
+        "deadline-replan": []
+      },
+      "model_actions": 6
+    }
+  ],
+  "all_passed": true,
+  "model_actions": 16,
+  "scope": "真实模型小样本行为验证；缺信息和重复请求不调用模型"
+}

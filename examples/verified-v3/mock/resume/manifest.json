@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "run_id": "4f84bb63b671477da215efff18dbdbcc",
+  "started_at": "2026-10-28T09:06:49.316310+00:00",
+  "python": "3.9.6",
+  "process_id": 11134,
+  "mode": "mock",
+  "max_steps": 4,
+  "fault_injection": {
+    "save_plan": {
+      "count": 1,
+      "retryable": true
+    }
+  },
+  "catalog_sha256": "ea18f74e04c77e87b193079b0ce97f67faf3bb6f6d73f754bd5c9e24be262585",
+  "source_sha256": "fc5b009fa91da49787732ea957f2eec98639df910bb63a0959cc64b5835110d9",
+  "source_files": {
+    "run.py": "a0e574641a5756d8ceffcd439023aa3a094fec1e7e8325a8fc76e9e88894e6ff",
+    "src/content_planner/__init__.py": "3c380dbb1682aacf4cf0cd34fd5a1cf17f7e7c194bc5cb0444584bda901d2e10",
+    "src/content_planner/agent.py": "76b2ae75b648d50b0c0d1a97058f0db25bbd761a24e4cc0808134004df475639",
+    "src/content_planner/audit.py": "d27e0d106c9001a6177e0d3163a1e18fa420631c0eaab5eecd413cb3cb77e845",
+    "src/content_planner/cli.py": "71a841aaef019399905db0c0512f328e07dc833b3c2af34ab00df5edaf3360a9",
+    "src/content_planner/evidence.py": "bb034d1e48d808028ac4dda98c509e867d56ac7f3dca177d4b840847788de518",
+    "src/content_planner/models.py": "40c99bf391741f5bcfaec50d7eb3405fa3e7ee76424a6915de49963f61760c07",
+    "src/content_planner/reporting.py": "ad3dccabce1668eefbece145c8b65475be7914398a3791f2788b07c5295a9e41",
+    "src/content_planner/store.py": "30665a81c18f80265780cf2b885e182b862f0fe877a4764512088cb4fa3370c7",
+    "src/content_planner/tools.py": "bb97ecda246144202e9f3d443444d9e3789332a49b66b627a938733fdff4a36f",
+    "src/content_planner/validation.py": "2f65b9e33dee14af7efd48dcf6f2ed24df7df5ded5012b286a024d5f457de2a3"
+  },
+  "finished_at": "2026-10-28T09:06:49.319330+00:00",
+  "request_sha256": "31843337ac7a075b4bdab1d29e97ed8ddafb46b2cccf0fa5d25d0f403f61a8a2",
+  "files": {
+    "input.json": "b85fbeb84ed04e487f8d186468bbb3e852c3d50227090b76a9ac3b4c50015e8f",
+    "catalog.json": "ddce53779ffb64e70fcf4ec5568f0f7c8cc757b445deb11db15e923508f4e6c0",
+    "output.json": "39ce6d62030f53a11c9cae72856291ce8f4084bd26012c3946ad0c541b49a770",
+    "trace.jsonl": "905cb47427f9ffb8485502785b6d231819a95de38f3b2c0775ce8f9c42a0442a",
+    "decision-inputs.jsonl": "2182a9f231c6b59df26848f008aa7ecc1a17e510b8524903b939e7445b3399ed",
+    "trace.md": "4a6ea9db100b87fd61f3eea58f4cb372cffc4014877926126acf573928154ec7",
+    "result.md": "2491349aa7e97cfc2e595111846e6cbcdfd63b32f28b7621165291716938c8eb"
+  }
+}

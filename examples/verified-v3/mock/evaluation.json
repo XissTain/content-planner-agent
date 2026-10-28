@@ -1,0 +1,311 @@
+{
+  "schema_version": 2,
+  "mode": "mock",
+  "generated_at": "2026-10-28T09:06:49.371517+00:00",
+  "cases": [
+    {
+      "case": "normal",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "repeat_deduplicated": true,
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "normal",
+        "repeat"
+      ],
+      "evidence_errors": {
+        "normal": [],
+        "repeat": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "replan",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "budget_observation_changed_plan": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "replan"
+      ],
+      "evidence_errors": {
+        "replan": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "user-priority",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "budget_observation_changed_plan": true,
+        "respects_confirmed_user_priority": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "user-priority"
+      ],
+      "evidence_errors": {
+        "user-priority": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "opposite-priority",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "budget_observation_changed_plan": true,
+        "counterfactual_changes_plan": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "opposite-priority"
+      ],
+      "evidence_errors": {
+        "opposite-priority": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "missing",
+      "expected": "needs_input",
+      "actual": "needs_input",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "no_model_or_tool_calls": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "missing"
+      ],
+      "evidence_errors": {
+        "missing": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "missing-budget",
+      "expected": "needs_input",
+      "actual": "needs_input",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "no_model_or_tool_calls": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "missing-budget"
+      ],
+      "evidence_errors": {
+        "missing-budget": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "missing-deadline",
+      "expected": "needs_input",
+      "actual": "needs_input",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "no_model_or_tool_calls": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "missing-deadline"
+      ],
+      "evidence_errors": {
+        "missing-deadline": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "tool-failure",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "failure_really_observed": true,
+        "successful_search_reused": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "tool-failure"
+      ],
+      "evidence_errors": {
+        "tool-failure": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "service-fallback",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "failure_really_observed": true,
+        "successful_search_reused": true,
+        "permanent_failure_not_retried_unchanged": true,
+        "alternative_service_saved": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "service-fallback"
+      ],
+      "evidence_errors": {
+        "service-fallback": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "save-failure",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "failure_really_observed": true,
+        "successful_search_reused": true,
+        "successful_script_not_regenerated": true,
+        "not_falsely_saved": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "save-failure"
+      ],
+      "evidence_errors": {
+        "save-failure": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "impossible",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "stopped_on_business_constraints": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "impossible"
+      ],
+      "evidence_errors": {
+        "impossible": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "deadline",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "stopped_on_business_constraints": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "deadline"
+      ],
+      "evidence_errors": {
+        "deadline": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "deadline-replan",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "deadline_observation_changed_plan": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "deadline-replan"
+      ],
+      "evidence_errors": {
+        "deadline-replan": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "no-assets",
+      "expected": "needs_input",
+      "actual": "needs_input",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "no-assets"
+      ],
+      "evidence_errors": {
+        "no-assets": []
+      },
+      "model_actions": 0
+    },
+    {
+      "case": "resume",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "distinct_processes": true,
+        "exit_codes": true,
+        "initial_incomplete_with_script_preserved": true,
+        "continued_only_failed_save": true,
+        "same_script_reused": true,
+        "expected_status": true,
+        "no_unexpected_model_failure": true,
+        "independent_evidence_verification": true
+      },
+      "directories": [
+        "resume",
+        "resume-continued"
+      ],
+      "evidence_errors": {
+        "resume": [],
+        "resume-continued": []
+      },
+      "model_actions": 0
+    }
+  ],
+  "all_passed": true,
+  "model_actions": 0,
+  "scope": "确定性流程测试，不证明真实模型效果"
+}

@@ -1,0 +1,254 @@
+{
+  "status": "completed",
+  "message": "方案已实际保存；活动制作仍为计划。",
+  "mode": "mock",
+  "stop_reason": "saved",
+  "clock_mode": "simulation",
+  "run_metadata": {
+    "run_id": "e990020a2a054219a2ff9b30222ab9f5",
+    "started_at": "2026-10-28T09:06:49.232542+00:00",
+    "python": "3.9.6",
+    "process_id": 11104,
+    "mode": "mock",
+    "max_steps": 12,
+    "fault_injection": {
+      "generate_script": 1
+    },
+    "catalog_sha256": "ea18f74e04c77e87b193079b0ce97f67faf3bb6f6d73f754bd5c9e24be262585",
+    "source_sha256": "fc5b009fa91da49787732ea957f2eec98639df910bb63a0959cc64b5835110d9",
+    "source_files": {
+      "run.py": "a0e574641a5756d8ceffcd439023aa3a094fec1e7e8325a8fc76e9e88894e6ff",
+      "src/content_planner/__init__.py": "3c380dbb1682aacf4cf0cd34fd5a1cf17f7e7c194bc5cb0444584bda901d2e10",
+      "src/content_planner/agent.py": "76b2ae75b648d50b0c0d1a97058f0db25bbd761a24e4cc0808134004df475639",
+      "src/content_planner/audit.py": "d27e0d106c9001a6177e0d3163a1e18fa420631c0eaab5eecd413cb3cb77e845",
+      "src/content_planner/cli.py": "71a841aaef019399905db0c0512f328e07dc833b3c2af34ab00df5edaf3360a9",
+      "src/content_planner/evidence.py": "bb034d1e48d808028ac4dda98c509e867d56ac7f3dca177d4b840847788de518",
+      "src/content_planner/models.py": "40c99bf391741f5bcfaec50d7eb3405fa3e7ee76424a6915de49963f61760c07",
+      "src/content_planner/reporting.py": "ad3dccabce1668eefbece145c8b65475be7914398a3791f2788b07c5295a9e41",
+      "src/content_planner/store.py": "30665a81c18f80265780cf2b885e182b862f0fe877a4764512088cb4fa3370c7",
+      "src/content_planner/tools.py": "bb97ecda246144202e9f3d443444d9e3789332a49b66b627a938733fdff4a36f",
+      "src/content_planner/validation.py": "2f65b9e33dee14af7efd48dcf6f2ed24df7df5ded5012b286a024d5f457de2a3"
+    },
+    "finished_at": "2026-10-28T09:06:49.238595+00:00"
+  },
+  "real_model_used": false,
+  "evidence_modes": [
+    "mock"
+  ],
+  "request": {
+    "request_id": "eval-tool-failure",
+    "topic": "剪辑助手新品内容活动",
+    "budget": 20,
+    "start_at": "2030-01-01T10:00:00+08:00",
+    "deadline": "2030-01-01T18:00:00+08:00",
+    "required_asset_ids": [
+      "A01"
+    ],
+    "preferred_script_service": "premium",
+    "preferred_production": "polished"
+  },
+  "planning_clock": "2030-01-01T10:00:00+08:00",
+  "resumed": false,
+  "steps_this_run": 5,
+  "steps": [
+    {
+      "tool": "search_assets",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    },
+    {
+      "tool": "estimate_plan",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    },
+    {
+      "tool": "generate_script",
+      "status": "succeeded",
+      "attempts": 2,
+      "successes": 1
+    },
+    {
+      "tool": "save_plan",
+      "status": "succeeded",
+      "attempts": 1,
+      "successes": 1
+    }
+  ],
+  "plan": {
+    "activity_executed": false,
+    "budget": 20,
+    "deadline": "2030-01-01T18:00:00+08:00",
+    "estimate": {
+      "asset_ids": [
+        "A01"
+      ],
+      "budget_gap": 0,
+      "candidate_id": "5d39dbb2751083caa152",
+      "catalog_version": "synthetic-v1",
+      "checked_at": "2030-01-01T10:00:00+08:00",
+      "finish_at": "2030-01-01T11:20:00+08:00",
+      "fits_budget": true,
+      "fits_deadline": true,
+      "line_items": [
+        {
+          "cost": 2,
+          "minutes": 5,
+          "name": "A01"
+        },
+        {
+          "cost": 6,
+          "description": "创意脚本服务",
+          "minutes": 30,
+          "name": "script:premium"
+        },
+        {
+          "cost": 4,
+          "description": "精细制作",
+          "minutes": 45,
+          "name": "production:polished"
+        }
+      ],
+      "minutes_gap": 0,
+      "ok": true,
+      "production": "polished",
+      "script_service": "premium",
+      "total_cost": 12,
+      "total_minutes": 80
+    },
+    "execution_plan": [
+      {
+        "depends_on": [],
+        "minutes": 5,
+        "status": "prepared",
+        "step": "准备素材"
+      },
+      {
+        "depends_on": [
+          "准备素材"
+        ],
+        "minutes": 30,
+        "status": "generated",
+        "step": "生成脚本"
+      },
+      {
+        "depends_on": [
+          "生成脚本"
+        ],
+        "minutes": 45,
+        "status": "planned",
+        "step": "内容制作（仅规划，尚未实际制作）"
+      }
+    ],
+    "plan_id": "P-52fb9150cbeeddcc683c",
+    "request_id": "eval-tool-failure",
+    "save_status": "saved",
+    "script": {
+      "generator": "local-synthetic-template",
+      "script_id": "S-0e1085bb8ca0201f7cdc",
+      "service": "premium",
+      "shots": [
+        {
+          "order": 1,
+          "source_id": "A01",
+          "visual": "展示素材 A01",
+          "voiceover": "支持自动字幕"
+        },
+        {
+          "order": 2,
+          "source_id": "A01",
+          "visual": "展示素材 A01",
+          "voiceover": "提供可编辑的视频模板"
+        }
+      ],
+      "source_ids": [
+        "A01"
+      ],
+      "title": "剪辑助手新品内容活动"
+    },
+    "topic": "剪辑助手新品内容活动"
+  },
+  "preserved_results": {
+    "asset_ids": [
+      "A01",
+      "A02"
+    ],
+    "estimates": [
+      {
+        "ok": true,
+        "candidate_id": "5d39dbb2751083caa152",
+        "asset_ids": [
+          "A01"
+        ],
+        "script_service": "premium",
+        "production": "polished",
+        "line_items": [
+          {
+            "name": "A01",
+            "cost": 2,
+            "minutes": 5
+          },
+          {
+            "name": "script:premium",
+            "cost": 6,
+            "minutes": 30,
+            "description": "创意脚本服务"
+          },
+          {
+            "name": "production:polished",
+            "cost": 4,
+            "minutes": 45,
+            "description": "精细制作"
+          }
+        ],
+        "total_cost": 12,
+        "total_minutes": 80,
+        "fits_budget": true,
+        "budget_gap": 0,
+        "catalog_version": "synthetic-v1",
+        "finish_at": "2030-01-01T11:20:00+08:00",
+        "fits_deadline": true,
+        "minutes_gap": 0,
+        "checked_at": "2030-01-01T10:00:00+08:00"
+      }
+    ],
+    "script_ids": [
+      "S-0e1085bb8ca0201f7cdc"
+    ],
+    "scripts": [
+      {
+        "script_id": "S-0e1085bb8ca0201f7cdc",
+        "service": "premium",
+        "title": "剪辑助手新品内容活动",
+        "source_ids": [
+          "A01"
+        ],
+        "shots": [
+          {
+            "order": 1,
+            "visual": "展示素材 A01",
+            "voiceover": "支持自动字幕",
+            "source_id": "A01"
+          },
+          {
+            "order": 2,
+            "visual": "展示素材 A01",
+            "voiceover": "提供可编辑的视频模板",
+            "source_id": "A01"
+          }
+        ],
+        "generator": "local-synthetic-template"
+      }
+    ]
+  },
+  "constraint_summary": {
+    "scope": "evaluated_candidates_only",
+    "checked_candidates": 1,
+    "feasible_candidate_ids": [
+      "5d39dbb2751083caa152"
+    ],
+    "minimum_checked_budget_gap": 0,
+    "minimum_checked_minutes_gap": 0
+  }
+}

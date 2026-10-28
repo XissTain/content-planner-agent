@@ -1,0 +1,31 @@
+{
+  "version": "synthetic-v1",
+  "notice": "所有产品、费用和耗时均为合成数据；费用单位不是人民币，也不包含模型调用费用。",
+  "assets": [
+    {
+      "id": "A01",
+      "title": "剪辑助手新品介绍素材",
+      "tags": ["新品", "剪辑", "视频", "字幕", "内容活动", "产品"],
+      "facts": ["支持自动字幕", "提供可编辑的视频模板"],
+      "cost": 2,
+      "minutes": 5
+    },
+    {
+      "id": "A02",
+      "title": "节日活动通用素材",
+      "tags": ["节日", "活动", "海报", "运营"],
+      "facts": ["提供节日主题背景素材"],
+      "cost": 0,
+      "minutes": 5
+    }
+  ],
+  "script_services": {
+    "premium": {"cost": 6, "minutes": 30, "description": "创意脚本服务"},
+    "standard": {"cost": 2, "minutes": 15, "description": "标准脚本服务"},
+    "template": {"cost": 1, "minutes": 10, "description": "模板脚本服务"}
+  },
+  "production_services": {
+    "polished": {"cost": 4, "minutes": 45, "description": "精细制作"},
+    "simple": {"cost": 2, "minutes": 20, "description": "简洁制作"}
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "mode": "mock",
+  "generated_at": "2026-10-28T07:54:32.996623+00:00",
+  "cases": [
+    {
+      "case": "normal",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "cost_sum": true,
+        "within_budget_and_deadline": true,
+        "repeat_deduplicated": true
+      }
+    },
+    {
+      "case": "replan",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "cost_sum": true,
+        "within_budget_and_deadline": true,
+        "observed_budget_failure_then_feasible": true
+      }
+    },
+    {
+      "case": "missing",
+      "expected": "needs_input",
+      "actual": "needs_input",
+      "passed": true,
+      "checks": {
+        "expected_status": true
+      }
+    },
+    {
+      "case": "tool-failure",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "cost_sum": true,
+        "within_budget_and_deadline": true,
+        "failure_really_injected": true
+      }
+    },
+    {
+      "case": "save-failure",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true,
+        "failure_really_injected": true
+      }
+    },
+    {
+      "case": "impossible",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true
+      }
+    },
+    {
+      "case": "deadline",
+      "expected": "incomplete",
+      "actual": "incomplete",
+      "passed": true,
+      "checks": {
+        "expected_status": true
+      }
+    },
+    {
+      "case": "no-assets",
+      "expected": "needs_input",
+      "actual": "needs_input",
+      "passed": true,
+      "checks": {
+        "expected_status": true
+      }
+    },
+    {
+      "case": "resume",
+      "expected": "completed",
+      "actual": "completed",
+      "passed": true,
+      "checks": {
+        "initial_incomplete": true,
+        "successful_steps_reused": true,
+        "expected_status": true,
+        "cost_sum": true,
+        "within_budget_and_deadline": true
+      }
+    }
+  ],
+  "all_passed": true,
+  "scope": "确定性流程测试，不证明真实模型效果"
+}
